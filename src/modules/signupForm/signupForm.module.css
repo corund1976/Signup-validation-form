@@ -1,0 +1,9 @@
+.list_inputs {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.list_inputs > li:not(:last-child) {
+  margin-bottom: 36px;
+}
