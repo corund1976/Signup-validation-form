@@ -1,7 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
-import SignupForm from "./modules/signupForm/SignupForm";
+import { useState } from 'react';
+
+import SignupForm from 'modules/signupForm';
+
+import reactLogo from 'assets/react.svg';
+
+import 'App.css';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +20,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+
       <SignupForm />
     </div>
   );

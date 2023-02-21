@@ -68,7 +68,9 @@ Input.defaultProps = {
   onClick: () => {},
   placeholder: "",
   autoComplete: "off",
-  pattern: "([A-Za-z0-9_-]+)",
+  pattern: "(.*?)",
+  // ЛЮБОЙ СИМВОЛ
+  // pattern: "([A-Za-z0-9_-]+)",
   // любые буквы и цифры, а также - и _
   minLength: 0,
   maxLength: 50,

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Input from "../../components/input/Input";
+import Input from "components/input";
 
 import s from "./signupForm.module.css";
 
@@ -10,6 +10,7 @@ function SignupForm() {
   const [phone, setPhone] = useState("");
   const [telegramUsername, setTelegramUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [value, setValue] = useState("");
 
   const submit = (e) => {
     e.preventDefault();
@@ -18,6 +19,7 @@ function SignupForm() {
     console.log("phone", phone);
     console.log("telegramUsername", telegramUsername);
     console.log("password", password);
+    console.log("value", Number(value));
   };
 
   return (
@@ -75,6 +77,17 @@ function SignupForm() {
             onChange={setPassword}
             placeholder="Введите пароль"
             pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15})"
+          />
+        </li>
+        <li>
+          <Input
+            id="signupValue"
+            label="Сумма"
+            value={value}
+            onChange={setValue}
+            placeholder="Введите сумму"
+            pattern="([0-9]+\.?[0-9]{0,2})"
+            // любой число, до сотых
           />
         </li>
       </ul>
