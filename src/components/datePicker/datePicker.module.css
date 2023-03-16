@@ -1,0 +1,109 @@
+.container {
+  position: relative;
+}
+
+/* S E L E C T - I N P U T */
+.select__period {
+  background: url('/src/images/common/Arrow_down--Grеy.svg') no-repeat right
+    16px center; /* кастомная стрелка*/
+}
+
+/* S E L E C T */
+.select__preset {
+  display: block;
+
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .select__preset {
+    display: none;
+  }
+}
+
+/*   T A B S   */
+.tabs {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .tabs {
+    display: block;
+
+    border-radius: 10px;
+
+    border: 1px solid var(--color-fourth);
+
+    padding: 4px;
+
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tabs {
+    margin-right: 24px;
+  }
+}
+
+.tab {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-scnd);
+
+  border-radius: 6px;
+  border: none;
+
+  background: transparent;
+
+  padding: 13px 32px;
+
+  width: 100%;
+
+  transition: color var(--trans-time) var(--trans-func);
+}
+.tab:hover {
+  color: var(--color-hover);
+}
+
+.tab__active {
+  composes: tab;
+
+  color: var(--color-hover);
+
+  background: var(--bg-tab-active);
+}
+
+/* DATE RANGE */
+.date__picker {
+  position: absolute;
+  top: -8px;
+  right: 0;
+
+  z-index: 1;
+
+  padding-top: 8px;
+
+  width: fit-content;
+  height: fit-content;
+
+  border-radius: 12px;
+
+  box-shadow: var(--box-shadow);
+  background: var(--bg-color-scnd);
+
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .date__picker {
+    padding: 16px;
+
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .date__picker {
+    padding: 24px;
+  }
+}

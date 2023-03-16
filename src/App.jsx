@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import SignupForm from 'modules/signupForm';
+import DatePicker from 'components/datePicker';
 
 import reactLogo from 'assets/react.svg';
 
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
@@ -19,9 +20,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Vite + React</h1> */}
 
-      <SignupForm />
+      {/* <SignupForm /> */}
+      <DatePicker />
     </div>
   );
 }

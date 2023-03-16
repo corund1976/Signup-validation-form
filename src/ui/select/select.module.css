@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+
+  font-weight: 400;
+  font-size: 12px;
+
+  border-radius: 4px;
+
+  color: var(--color-main);
+  background: var(--bg-color-scnd);
+
+  padding: 0 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+
+  border-radius: 10px;
+  border: 1px solid var(--border-color-main);
+
+  color: var(--color-scnd);
+  background: transparent;
+
+  padding: 12px 44px 13px 16px;
+
+  width: 100%;
+
+  cursor: pointer;
+
+  appearance: none; /*скрыл стандартную стрелку селекта*/
+  background: url('/src/images/common/select__arrow_down.svg') no-repeat right
+    16px center; /* добавил кастомную стрелку*/
+}
+@media screen and (min-width: 768px) {
+  .select {
+    padding: 16px 44px 17px 16px;
+  }
+}
+
+select:focus {
+  outline: solid 1px var(--color-hover);
+}
+
+.select option {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+
+  border-radius: 12px;
+  border: none;
+
+  color: var(--color-scnd);
+  background: var(--bg-color-scnd);
+
+  box-shadow: var(--box-shadow);
+}

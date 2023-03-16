@@ -1,0 +1,58 @@
+.rdrCalendarWrapper {
+  background-color: var(--bg-color-scnd);
+}
+/* Ширина календаря */
+.rdrMonth {
+  width: 323px;
+}
+/* даты доступные для выбора */
+.rdrDayNumber span {
+  color: var(--color-main);
+}
+/* даты НЕ доступные для выбора*/
+.rdrDayDisabled {
+  background: var(--bg-color-scnd);
+}
+
+.rdrMonthAndYearPickers {
+  color: var(--color-hover);
+}
+
+/* КНОПКИ ПРЕД. СЛЕД. МЕСЯЦ */
+.rdrNextPrevButton {
+  background: transparent;
+
+  width: 40px;
+  height: 40px;
+
+  transition: background-image var(--trans-time) var(--trans-func);
+}
+.rdrNextPrevButton:hover {
+  background: transparent;
+}
+
+.rdrNextPrevButton i {
+  display: none;
+}
+
+.rdrPprevButton {
+  background-image: var(--arrow-left);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.rdrPprevButton:hover {
+  background-image: var(--arrow-left-hover);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.rdrNextButton {
+  background-image: var(--arrow-right);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.rdrNextButton:hover {
+  background-image: var(--arrow-right-hover);
+  background-repeat: no-repeat;
+  background-position: center center;
+}

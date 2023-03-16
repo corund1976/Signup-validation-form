@@ -1,38 +1,32 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Input from "components/input";
+import Input from 'ui/input';
 
-import s from "./signupForm.module.css";
+import s from './signupForm.module.css';
 
 function SignupForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [telegramUsername, setTelegramUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [value, setValue] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [telegramUsername, setTelegramUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [value, setValue] = useState('');
 
   const submit = (e) => {
     e.preventDefault();
-    console.log("name", name);
-    console.log("email", email);
-    console.log("phone", phone);
-    console.log("telegramUsername", telegramUsername);
-    console.log("password", password);
-    console.log("value", Number(value));
+    console.log('name', name);
+    console.log('email', email);
+    console.log('phone', phone);
+    console.log('telegramUsername', telegramUsername);
+    console.log('password', password);
+    console.log('value', Number(value));
   };
 
   return (
     <form className={s.form} onSubmit={submit}>
       <ul className={s.list_inputs}>
         <li>
-          <Input
-            id="signupName"
-            label="Имя"
-            value={name}
-            onChange={setName}
-            placeholder="Введите имя"
-          />
+          <Input id="signupName" label="Имя" value={name} onChange={setName} placeholder="Введите имя" />
         </li>
         <li>
           <Input
